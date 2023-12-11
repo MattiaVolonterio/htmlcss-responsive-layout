@@ -469,7 +469,14 @@ footer {
 #footer-main-content {
   background-color: var(--primary-bg-color);
   margin-bottom: 0;
-  padding: 1rem;
+}
+
+#footer-main-content .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 #footer-main-content span {
@@ -477,20 +484,17 @@ footer {
   color: #b9b6ec;
   font-size: 0.8rem;
 
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 #footer-main-content h3 {
   color: white;
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
 }
 
 #footer-main-content h2 {
   color: #fcc05e;
   font-size: 4rem;
-  margin-bottom: 1.5rem;
 }
 
 #footer-main-content p {
@@ -499,15 +503,12 @@ footer {
   line-height: 25px;
 
   padding: 0 300px;
-  margin-bottom: 1.5rem;
 }
 
 #footer-main-content .btn {
   color: var(--primary-bg-color);
   padding: 1rem 3.5rem;
   border-radius: 30px;
-
-  margin-bottom: 1.5rem;
 }
 
 .copyright {
@@ -519,7 +520,7 @@ footer {
   font-size: 0.7rem;
   color: white;
 
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .copyright i {
@@ -598,6 +599,12 @@ footer {
   .about-us-right {
     width: 40%;
   }
+
+  /* footer */
+
+  #footer-main-content p {
+    padding: 0 150px;
+  }
 }
 
 /* ## MEDIA SMARTPHONE */
@@ -666,5 +673,10 @@ footer {
 
   .about-us-right-img-container {
     width: 60%;
+  }
+
+  /* footer */
+  #footer-main-content p {
+    padding: 0;
   }
 }
