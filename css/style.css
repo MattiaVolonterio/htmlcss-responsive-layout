@@ -1,0 +1,38 @@
+:root {
+  --container-spacing: 1rem;
+
+  --primary-bg-color: #9792e4;
+  --secondary-bg-color: #0084fd;
+  --footer-bg-color: #333333;
+
+  --card-bg: #b5ddff;
+}
+
+/* ## RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ## GRID */
+
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-spacing);
+  padding-right: var(--container-spacing);
+}
+
+.row {
+  margin: 0 calc(-1 * var(--container-spacing));
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  padding: var(--container-spacing);
+}
