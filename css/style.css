@@ -197,20 +197,48 @@ section {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-
-  /* debug */
-  min-height: 300px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
-#strategic-planning .col-left,
+#strategic-planning .col-left {
+  width: 40%;
+  color: white;
+  padding: 0 2rem;
+  margin-right: 2rem;
+}
+
+.col-left img {
+  margin-bottom: 100px;
+}
+
+.col-left p {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
 #strategic-planning .col-right {
-  /* debug */
-  background-color: antiquewhite;
-  min-width: 200px;
-  margin: 0 1rem;
-  padding: 1rem;
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem 3.5rem;
+  border-radius: 25px;
+}
+
+.col-right h2 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rounded-button > i {
+  background-color: var(--primary-bg-color);
+  width: 50px;
+  aspect-ratio: 1;
+  margin-top: 1rem;
+  line-height: 50px;
+  border-radius: 50%;
 }
 
 /* ## TESTIMONIALS */
@@ -340,14 +368,29 @@ footer {
 
   /* strategic planning */
   #strategic-planning > .container {
+    width: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   #strategic-planning .col-left,
   #strategic-planning .col-right {
     width: 100%;
+  }
+
+  #strategic-planning .col-left h2 {
+    font-size: 2.5rem;
+  }
+
+  #strategic-planning .col-right h2 {
+    font-size: 1.5rem;
+  }
+
+  #strategic-planning .col-left p,
+  #strategic-planning .col-right {
+    font-size: 1rem;
+    line-height: 30px;
   }
 
   /* benefits */
