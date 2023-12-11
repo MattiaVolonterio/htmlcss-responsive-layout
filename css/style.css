@@ -88,6 +88,7 @@ section {
 }
 
 #demo-app .card .col {
+  width: 50%;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -109,8 +110,8 @@ section {
   padding-bottom: 1rem;
 }
 
-.col-left,
-.col-right {
+#strategic-planning .col-left,
+#strategic-planning .col-right {
   /* debug */
   background-color: antiquewhite;
   min-width: 200px;
@@ -191,4 +192,54 @@ section {
   width: 30%;
   text-align: center;
   padding: 2rem;
+}
+
+/* ## FOOTER */
+
+footer {
+  background-color: var(--footer-bg-color);
+
+  /* debug */
+  text-align: center;
+}
+
+#footer {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+/* ## FOOTER MAIN CONTENT */
+
+#footer-main-content {
+  background-color: var(--primary-bg-color);
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+/* ## MEDIA TABLET */
+
+@media screen and (max-width: 768px) {
+  /* demo app */
+  #demo-app .card .col {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  /* strategic planning */
+  #strategic-planning > .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #strategic-planning .col-left,
+  #strategic-planning .col-right {
+    width: 100%;
+  }
+
+  /* benefits */
+  #benefits .col {
+    width: 50%;
+  }
 }
