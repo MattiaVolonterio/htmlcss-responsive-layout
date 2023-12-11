@@ -16,10 +16,15 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* ## GRID */
 
 .container {
-  width: 70%;
+  width: 100%;
+  max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--container-spacing);
@@ -35,4 +40,22 @@
 
 .col {
   padding: var(--container-spacing);
+}
+
+/* ## HEADER */
+
+#header {
+  background-color: var(--secondary-bg-color);
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo,
+.header-nav {
+  /* debug */
+  padding: var(--container-spacing);
+  background-color: var(--card-bg);
 }
