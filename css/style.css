@@ -91,3 +91,29 @@ section {
   padding-top: 0;
   padding-bottom: 0;
 }
+
+/* ## STRATEGIC PLANNING */
+
+#strategic-planning {
+  background-color: var(--primary-bg-color);
+}
+
+#strategic-planning > .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  /* debug */
+  min-height: 300px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.col-left,
+.col-right {
+  /* debug */
+  background-color: antiquewhite;
+  min-width: 200px;
+  margin: 0 1rem;
+  padding: 1rem;
+}
