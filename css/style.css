@@ -17,8 +17,26 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ## GRID */
@@ -50,22 +68,47 @@ section {
   margin-bottom: var(--section-spacing);
 }
 
+.btn {
+  border: none;
+  border-radius: 15px;
+
+  background-color: white;
+  padding: 0.5rem 0.8rem;
+}
+
 /* ## HEADER */
 
 #header {
   background-color: var(--secondary-bg-color);
+  color: white;
+  padding-top: 0.6rem;
+  padding-bottom: 1rem;
 }
 
 #header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.header-logo,
-.header-nav {
-  /* debug */
-  padding: var(--container-spacing);
-  background-color: var(--card-bg);
+.header-logo img {
+  height: 35px;
+}
+
+.header-nav,
+.header-nav-desktop {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-nav-small {
+  font-size: 1.4rem;
+  display: none;
+}
+
+.header-nav li {
+  margin-left: 20px;
 }
 
 /* ## DEMO APP */
@@ -222,6 +265,15 @@ footer {
 /* ## MEDIA TABLET */
 
 @media screen and (max-width: 768px) {
+  /* header */
+  .header-nav-desktop {
+    display: none;
+  }
+
+  .header-nav-small {
+    display: flex;
+  }
+
   /* demo app */
   #demo-app .card .col {
     width: 100%;
