@@ -147,3 +147,27 @@ section {
 .testimonials-card-content {
   padding: 1rem;
 }
+
+/* ## BENEFITS */
+
+#benefits {
+  background-color: var(--primary-bg-color);
+}
+
+.benefits-title {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#benefits .col {
+  width: calc(100% / 3);
+}
+
+#benefits .card {
+  background-color: white;
+  padding: 1rem;
+
+  /* debug */
+  min-height: 200px;
+}
