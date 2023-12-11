@@ -117,3 +117,33 @@ section {
   margin: 0 1rem;
   padding: 1rem;
 }
+
+/* ## TESTIMONIALS */
+
+.testimonials-content {
+  text-align: center;
+}
+
+.testimonials-card {
+  display: flex;
+  background-color: var(--primary-bg-color);
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  /* debug */
+  padding: 1rem;
+}
+
+.testimonials-card-img {
+  width: 20%;
+}
+
+.testimonials-card-content {
+  width: 80%;
+}
+
+.testimonials-card-img,
+.testimonials-card-content {
+  padding: 1rem;
+}
