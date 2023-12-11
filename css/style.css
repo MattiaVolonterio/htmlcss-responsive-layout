@@ -171,3 +171,24 @@ section {
   /* debug */
   min-height: 200px;
 }
+
+/* ## ABOUT US */
+
+#about-us > .container {
+  display: flex;
+
+  /* debug */
+  border: 1px dashed black;
+  min-height: 300px;
+}
+
+.about-us-left {
+  width: 70%;
+  padding: 2rem;
+}
+
+.about-us-right {
+  width: 30%;
+  text-align: center;
+  padding: 2rem;
+}
