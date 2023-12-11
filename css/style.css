@@ -1,5 +1,6 @@
 :root {
   --container-spacing: 1rem;
+  --section-spacing: 1.5rem;
 
   --primary-bg-color: #9792e4;
   --secondary-bg-color: #0084fd;
@@ -42,6 +43,13 @@ body {
   padding: var(--container-spacing);
 }
 
+/* ## UTILS */
+
+section {
+  margin-top: var(--section-spacing);
+  margin-bottom: var(--section-spacing);
+}
+
 /* ## HEADER */
 
 #header {
@@ -58,4 +66,28 @@ body {
   /* debug */
   padding: var(--container-spacing);
   background-color: var(--card-bg);
+}
+
+/* ## DEMO APP */
+
+#demo-app .col:first-child {
+  width: calc(100% / 3 * 2);
+}
+
+#demo-app .col {
+  width: calc(100% / 3);
+}
+
+#demo-app .card {
+  height: 100%;
+  background-color: var(--card-bg);
+
+  /* debug */
+  min-height: 200px;
+  padding: 1rem;
+}
+
+#demo-app .card .col {
+  padding-top: 0;
+  padding-bottom: 0;
 }
