@@ -217,6 +217,8 @@ footer {
   padding: 1rem;
 }
 
+/* ## MEDIA QUERY */
+
 /* ## MEDIA TABLET */
 
 @media screen and (max-width: 768px) {
@@ -241,5 +243,46 @@ footer {
   /* benefits */
   #benefits .col {
     width: 50%;
+  }
+}
+
+/* ## MEDIA SMARTPHONE */
+
+@media screen and (max-width: 480px) {
+  /* demo app */
+  #demo-app .col:first-child,
+  #demo-app .col {
+    width: 100%;
+  }
+
+  /* testimonials */
+  .testimonials-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials-card-content,
+  .testimonials-card-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* benefits */
+  #benefits .col {
+    width: 100%;
+  }
+
+  /* about-us */
+  #about-us > .container {
+    flex-direction: column;
+  }
+
+  .about-us-left,
+  .about-us-right {
+    width: 100%;
+  }
+
+  .about-us-right {
+    text-align: left;
   }
 }
