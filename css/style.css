@@ -43,7 +43,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1080px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--container-spacing);
@@ -115,25 +115,76 @@ section {
 
 #demo-app .col:first-child {
   width: calc(100% / 3 * 2);
+  text-align: left;
 }
 
 #demo-app .col {
   width: calc(100% / 3);
 }
 
+#demo-app .col:first-child p {
+  margin-bottom: 1rem;
+}
+
+#demo-app .col:first-child .btn {
+  background-color: var(--secondary-bg-color);
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#demo-app .col:first-child img {
+  width: 65%;
+}
+
+#demo-app .card .col:last-child {
+  padding-top: 50px;
+}
+
+#demo-app .col:first-child i {
+  font-size: 1rem;
+  color: white;
+
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+
 #demo-app .card {
   height: 100%;
   background-color: var(--card-bg);
 
+  color: #617789;
+  text-align: center;
+
+  border-radius: 20px;
+
+  padding: 1.5rem 1rem 0 1rem;
   /* debug */
   min-height: 200px;
-  padding: 1rem;
 }
 
 #demo-app .card .col {
   width: 50%;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+#demo-app .card i,
+#demo-app .card h2 {
+  color: #0084fd;
+  margin-bottom: 1rem;
+}
+
+#demo-app .card h2 {
+  font-size: 1.2rem;
+}
+
+#demo-app .card i {
+  font-size: 4rem;
+}
+
+#demo-app .card > p {
+  padding-bottom: 1.5rem;
 }
 
 /* ## STRATEGIC PLANNING */
@@ -277,7 +328,14 @@ footer {
   /* demo app */
   #demo-app .card .col {
     width: 100%;
-    padding-bottom: 1rem;
+  }
+
+  #demo-app .col:first-child img {
+    margin-top: 1rem;
+  }
+
+  #demo-app .card .col:last-child {
+    padding-top: 20px;
   }
 
   /* strategic planning */
@@ -304,6 +362,15 @@ footer {
   /* demo app */
   #demo-app .col:first-child,
   #demo-app .col {
+    width: 100%;
+  }
+
+  #demo-app .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #demo-app .col:first-child img {
     width: 100%;
   }
 
