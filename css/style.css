@@ -331,12 +331,16 @@ section {
 
 #benefits {
   background-color: var(--primary-bg-color);
+  padding-bottom: 2rem;
 }
 
 .benefits-title {
   text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  color: white;
+  font-size: 2rem;
 }
 
 #benefits .col {
@@ -345,10 +349,38 @@ section {
 
 #benefits .card {
   background-color: white;
-  padding: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
 
   /* debug */
   min-height: 200px;
+}
+
+#benefits .card span,
+#benefits .card h3 {
+  color: var(--primary-bg-color);
+  margin-bottom: 1.5rem;
+}
+
+#benefits .card span {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+#benefits .card p {
+  color: #a7a7a7;
+  line-height: 23px;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+#benefits .card .btn {
+  background-color: var(--primary-bg-color);
+  color: white;
+  letter-spacing: 2px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 /* ## ABOUT US */
@@ -458,6 +490,11 @@ footer {
 /* ## MEDIA SMARTPHONE */
 
 @media screen and (max-width: 480px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   /* demo app */
   #demo-app .col:first-child,
   #demo-app .col {
