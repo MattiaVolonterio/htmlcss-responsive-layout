@@ -628,6 +628,19 @@ section {
   }
 }
 
+/* ## MEDIA 560px */
+
+@media screen and (max-width: 560px) {
+  #demo-app .card h2,
+  #demo-app p {
+    font-size: 0.8rem;
+  }
+
+  #demo-app .card i {
+    font-size: 2rem;
+  }
+}
+
 /* ## MEDIA SMARTPHONE */
 
 @media screen and (max-width: 480px) {
@@ -651,6 +664,18 @@ section {
 
   #demo-app .col:first-child img {
     width: 100%;
+  }
+
+  #demo-app .card h2 {
+    font-size: 1.2rem;
+  }
+
+  #demo-app p {
+    font-size: 1rem;
+  }
+
+  #demo-app .card i {
+    font-size: 4rem;
   }
 
   /* testimonials */
