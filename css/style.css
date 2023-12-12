@@ -449,29 +449,15 @@ section {
   margin-right: 5px;
 }
 
-/* ## FOOTER */
+/* ## GET STARTED */
 
-footer {
-  background-color: var(--footer-bg-color);
-
-  /* debug */
+#get-started {
+  background-color: var(--primary-bg-color);
+  margin-bottom: 0;
   text-align: center;
 }
 
-#footer {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 1rem;
-}
-
-/* ## FOOTER MAIN CONTENT */
-
-#footer-main-content {
-  background-color: var(--primary-bg-color);
-  margin-bottom: 0;
-}
-
-#footer-main-content .container {
+#get-started .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -479,7 +465,7 @@ footer {
   gap: 1.5rem;
 }
 
-#footer-main-content span {
+#get-started span {
   display: block;
   color: #b9b6ec;
   font-size: 0.8rem;
@@ -487,17 +473,17 @@ footer {
   margin-top: 2rem;
 }
 
-#footer-main-content h3 {
+#get-started h3 {
   color: white;
   font-size: 1.8rem;
 }
 
-#footer-main-content h2 {
+#get-started h2 {
   color: #fcc05e;
   font-size: 4rem;
 }
 
-#footer-main-content p {
+#get-started p {
   color: white;
   font-size: 0.9rem;
   line-height: 25px;
@@ -505,7 +491,7 @@ footer {
   padding: 0 300px;
 }
 
-#footer-main-content .btn {
+#get-started .btn {
   color: var(--primary-bg-color);
   padding: 1rem 3.5rem;
   border-radius: 30px;
@@ -531,11 +517,31 @@ footer {
   text-decoration: underline;
 }
 
+/* ## FOOTER */
+
+footer {
+  background-color: var(--footer-bg-color);
+
+  /* debug */
+  text-align: center;
+}
+
+#footer {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
 /* ## MEDIA QUERY */
 
 /* ## MEDIA TABLET */
 
 @media screen and (max-width: 768px) {
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   /* header */
   .header-nav-desktop {
     display: none;
@@ -600,9 +606,9 @@ footer {
     width: 40%;
   }
 
-  /* footer */
+  /* get started */
 
-  #footer-main-content p {
+  #get-started p {
     padding: 0 150px;
   }
 }
@@ -610,7 +616,7 @@ footer {
 /* ## MEDIA SMARTPHONE */
 
 @media screen and (max-width: 480px) {
-  .container {
+  section {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -675,8 +681,8 @@ footer {
     width: 60%;
   }
 
-  /* footer */
-  #footer-main-content p {
+  /* get started */
+  #get-started p {
     padding: 0;
   }
 }
